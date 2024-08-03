@@ -1,0 +1,74 @@
+body {
+  background-color: #e0f2f1; /* Seafoam background */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+}
+
+h1 {
+  color: #004d40; /* Darker seafoam color */
+}
+
+h2 {
+  color: #00796b; /* Medium seafoam color */
+  margin: 10px 0;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 300px;
+  height: 300px; /* Ensure board is square */
+  margin: 20px auto;
+  border: 2px solid #004d40; /* Border with darker seafoam color */
+  border-radius: 8px; /* Rounded corners for a modern look */
+  background-color: #b2dfdb; /* Lighter seafoam background for board */
+}
+
+.sqr {
+  border-right: 2px solid #004d40; /* Border between columns */
+  border-bottom: 2px solid #004d40; /* Border between rows */
+  font-size: 64px;
+  color: #004d40; /* X and O color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  line-height: 0; /* Set line height to remove movement */
+  height: 100px; /* Set explicit height for each square */
+}
+
+.sqr:nth-child(3n) {
+  border-right: none; /* Remove right border from the last column */
+}
+
+.sqr:nth-last-child(-n + 3) {
+  border-bottom: none; /* Remove bottom border from the last row */
+}
+
+.sqr:hover {
+  background-color: #80cbc4; /* Slight hover effect */
+}
+
+button {
+  background-color: #00796b; /* Button color */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #004d40; /* Darker hover color */
+}
