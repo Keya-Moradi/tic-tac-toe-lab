@@ -33,7 +33,7 @@ Welcome to the Tic-Tac-Toe Game! This project is a simple implementation of the 
 
 2. **Navigate to the project directory:**
 
- ```bash
+   ```bash
    cd tic-tac-toe
    ```
 
